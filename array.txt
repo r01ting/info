@@ -1,0 +1,83 @@
+
+	
+
+
+
+
+@ARRAYS
+--------------------------------------
+- DEFINITION
+        - GENERAL:
+                - a systematic arranagement of similar items (such as objects, numbers, etc.), typically arranged in rows and/or columns
+                - EXAMPLES:
+                        - regarding math and statistics, an array or matrix
+                        - regarding technology, a disk array (e.g. RAID)
+                        - regarding astronomy, a telescope or antenna array
+        - COMPUTER SCIENCE-SPECIFIC
+                - array type - a data type that represents a collection of ELEMENTS (values or variables), each selected by one or more indices (identifying keys) that can be computed at run time during program execution.
+                - array data structure - an arrangement of items at equally spaced addresses in computer memory
+
+- TERMINOLOGY                 
+        - ELEMENT/OBJECT 
+                - each item stored in an array          
+        - INDEX 
+                - identifier (usually a non-negative scalar integer) designating the position of each element/object in an array. 
+                - aka "subscript"
+                - in computer science, an index maps the array value to a stored object.
+
+- DIMENSIONS
+        - GENERAL
+                - single-dimensional array = array w/ 1 dimension
+                - multi-dimensional array = array w/ 2+ dimensions
+
+        - 1-DIMENSIONAL ARRAY (1D)
+                - stores a collection of similar type data in a contiguous block of memory 
+                        - i.e. stores data as a list
+                - EXAMPLE: 1 row, 4 columns
+
+                        1, 2, 3, 4
+
+                        - expressed as: {1, 2, 3, 4, 5}
+ 
+        - 2-DIMENSIONAL ARRAY (2D)
+                - type of array that stores multiple data elements of the same type in matrix or table like format w/ a number of rows and columns
+                        - i.e. stores data in matrix in a row-column format
+                - EXAMPLE:  2 rows, 3 columns
+
+                         10  20  30  
+                         50  60  70  
+
+                        - expressed as: {{10,20,30}, {50,60,70}};
+
+        - 3-DIMENSIONAL ARRAY
+                
+                [insert]
+
+
+- INDEXING
+        - DESCRIPTION
+                - the methodology used to identify the position of elements in an array
+        - VOCAB USAGE: 
+                - in a system/programming lanaguage, if the first element in array is 0, 
+                        - the system/language is referred to be "indexed from zero" 
+                        - the "starting index" is zero
+        - INDEXING METHODS: there are 3 ways in which elements in an array can be indexed:
+
+                - 0 (ZERO-BASED INDEXING)
+                        - The first element of the array is indexed by subscript of 0. 
+                                - i.e. when calling on position of first element in an array, returns value of "0"
+                        - utilized by most modern programming languages
+                        - EX: C, Java and Lisp. 
+                                - here, the subscript refers to an offset from the starting position of an array (i.e. the first element has an offset of zero)
+
+                - 1 (ONE-BASED INDEXING)
+                        - The first element of the array is indexed by subscript of 1.
+                                - i.e. when calling on position of first element in an array, returns value of "1"
+                        - EX: Excel MATCH() function 
+
+                - n (n-BASED INDEXING)
+                        - The base index of an array can be freely chosen. 
+                        - Usually programming languages that allow n-based indexing also allow the following: 
+                                - negative index values 
+                                - other scalar data types (e.g. enumerations or characters may be used as an array index.
+
